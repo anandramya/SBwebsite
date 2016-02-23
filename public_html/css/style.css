@@ -5,9 +5,15 @@
 * {
 	box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Gaura times';
+  src: url('../fonts/gtr.woff') format('woff');
+ 	src: url('../fonts/gtb.woff') format('woff');
+	src: url('../fonts/gtb.ttf') format('truetype');
+	src: url('../fonts/gtr.ttf') format('truetype');
+}
 
 body {
-	font-family: 'Helvetica', sans-serif;
 	line-height: 1.6;
 	color: #333333;
 }
@@ -16,15 +22,22 @@ p {
 	font-size: .95em;
 	margin-bottom: 1.8em;
 }
-h1 {
-	margin-top: 0;
-}
+
 
 h2,
 h3,
-a {
+a{
 	color: #333333;
+	font-family: 'Gaura times';
+	font-weight: normal;
+	font-size: 1.25em;
 }
+
+p {
+	font-family: 'Gaura times';
+	font-weight: 500;
+}
+
 
 h2,
 h3 {
@@ -45,44 +58,53 @@ img {
 
 /* ---- Navigation ---- */
 
-.name {
+.name, .chapter-name {
 	font-size: 1.25em;
-	margin: 0;
+	margin-top:5px;
 }
 
-.main-nav {
+.main-nav, .chapter-nav {
 	margin-top: 5px;
 }
 
 .name a,
-.main-nav a {
+.main-nav a,.chapter-nav a, .chapter-name a ,.chapter-nav-bottom a{
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
 }
 
-.main-nav a {
+.chapter-name a {
+	font-family: 'Gaura Times';
+	color: #FFFFFF;
+}
+.main-nav a, .chapter-nav a, .chapter-nav-bottom a{
 	font-size: 1.25em;
 	color: #333333;
-	text-transform: none;
-	weight: normal;
 }
-
-.main-nav a:hover {
-	color: #093a58;
+.chapter-nav a{
+	color: #FFFFFF;
 }
-
 /* ---- Layout Containers ---- */
 
 .main-header {
 	padding-top: .5em;
 	padding-bottom: .5em;
-	background-color: #e9eaed;
+	background-color: #333333;
 	background-image: url("../img/pariksit.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
   height: 500px;
+}
+
+.chapter-header{
+padding-top: .5em;
+padding-bottom: .5em;
+background-color: #333333;
+margin-bottom: 30px;
+}
+.container{
 
 }
 
@@ -99,18 +121,44 @@ img {
 	margin: 0 auto;
 	text-align: center;
 }
+.chapter-primary {
+	background: #FFFFFF;
+}
 
 .col {
 	padding-right: 1em;
 	padding-left: 1em;
 }
+.chapter-content li{
+	margin-bottom: 10px;
+	padding: 3px 3px;
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+.image1, .image2 {
+display:block;
+padding: 5px 5px;
+border-radius: 10px;
+border-style: solid;
+border-width: thin;
+border-color: #b3b3b3;
+margin: 10px 10px;
+}
+.next a{
+padding: 10px 10px;
+display: block;
+margin: 10px 10px 30px 10px;
+background: #0080ff;
+}
 
 .main-footer {
-	padding: 2em 0;
+	padding: 1.5em 0;
 	margin-top: 30px;
 	background-color: #333333;
-	color: #ffffff;
+	color: #CCCCCC;
 }
+
 
 /* ---- Page Elements ---- */
 
@@ -128,14 +176,23 @@ img {
 
 @media (min-width: 769px) {
 
+	.chapter-header {
+		height: 73px;
+		}
+
 	.container {
 		width: 90%;
 		margin: 0 auto;
+		min-height: calc(100vh - 73px);
 	}
 
 	.name,
-	.col {
+	.col,.chapter-name {
 		float: left;
+	}
+
+	.chapter-primary {
+		width: 100%;
 	}
 
 	.primary,
@@ -143,11 +200,11 @@ img {
 		width: 50%;
 	}
 
-	.main-nav {
+	.main-nav, .chapter-nav, .chapter-nav-bottom{
 		float: right;
 	}
 
-	.main-nav li {
+	.main-nav li, .chapter-nav li {
 		display: inline-block;
 		margin-left: 15px;
 	}
@@ -158,6 +215,19 @@ img {
 	}
 .banner {
 	width: 90%;
+}
+.image1 {
+float: left;
+max-height: 400px;
+max-width: 400px;
+}
+.image2 {
+float: right;
+max-height: 400px;
+max-width: 400px;
+}
+.next a {
+	float: right;
 }
 
 	/* ---- Float clearfix ---- */
@@ -172,18 +242,22 @@ img {
 
 @media (min-width: 1025px) {
 
+	.chapter-header {
+
+		height: 73px;
+		}
 	.container {
 		width: 80%;
 		max-width: 1150px;
+		min-height: calc(100vh - 73px);
 	}
 
-	.primary {
-		width: 40%;
+	.primary,
+	.secondary {
+		width: 50%;
 	}
-
-	.secondary,
-	.tertiary {
-		width: 30%;
+	.chapter-primary {
+		width: 100%;
 	}
 	.banner {
 		width: 80%;
