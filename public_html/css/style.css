@@ -171,7 +171,14 @@ background: #0080ff;
 	background-color: #333333;
 	color: #CCCCCC;
 }
+  /* slick styles */
+	.slick-dots {
+	    bottom: 20px;
+	}
 
+	.slick-dots li button:before {
+	    font-size: 16px;
+	}
 
 /* ---- Page Elements ---- */
 
@@ -254,21 +261,13 @@ max-width: 400px;
 		display: table;
 		clear: both;
 	}
-	/* slick styles */
-	.slick-dots {
-	    bottom: 20px;
-	}
-	.slick-dots li button:before {
-	    font-size: 16px;
-	}
 
 }
 
 @media (min-width: 1025px) {
 
 	.chapter-header {
-
-		height: 73px;
+      height: 73px;
 		}
 	.container {
 		width: 80%;
