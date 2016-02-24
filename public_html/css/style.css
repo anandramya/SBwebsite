@@ -92,11 +92,22 @@ img {
 }
 /* ---- Layout Containers ---- */
 
-.main-header {
+.slide1 {
 	padding-top: .5em;
 	padding-bottom: .5em;
 	background-color: #333333;
 	background-image: url("../img/pariksit.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+  height: 500px;
+}
+
+.slide2 {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: #333333;
+	background-image: url("../img/sukadev_pariksit.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -242,6 +253,13 @@ max-width: 400px;
 		content: " ";
 		display: table;
 		clear: both;
+	}
+	/* slick styles */
+	.slick-dots {
+	    bottom: 20px;
+	}
+	.slick-dots li button:before {
+	    font-size: 16px;
 	}
 
 }
