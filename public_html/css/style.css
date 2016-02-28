@@ -118,6 +118,8 @@ margin: 10px 10px;
 	background-color: #333333;
 	color: #CCCCCC;
 	height:60px;
+	line-height: 3;
+	font-size: 15px;
 }
   /* slick styles */
 	.slick-dots {
@@ -204,19 +206,19 @@ li.dropdown {
     display: block;
 }
 
-.slide1 p {
+.caption1 {
 	width: 80%;
 	position: relative;
-	top:20%;
+	top:25%;
 	font-size: 14px;
   color: #333333;
 	margin:0 auto;
 	opacity: .6;
 }
-.slide1 a {
+.caption2 {
 	width: 20%;
 	position: relative;
-	top:60%;
+	top:80%;
 	font-size: 14px;
 	color: #333333;
 	margin:0 auto;
@@ -235,10 +237,10 @@ margin-right: 5px;
 }
 
 .medium {
-height: 200px;
-width: 200px;
+height: 400px;
+width: 300px;
 float:center;
-margin-top: 10px;
+margin-top: 40px;
 padding: 0px 0px;
 }
 
@@ -295,7 +297,7 @@ padding: 0px 0px;
 
  .half-grid {
 	 float: left;
-	 height: 500px;
+	 height: 700px;
 	 background: #ffff66
 	 padding: 10px 10px;
 	 text-align: center;
