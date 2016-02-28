@@ -1,0 +1,116 @@
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/slick/slick.min.js"></script>
+  <script>
+      $('.slides').slick({
+       fade: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+        dots: true
+      });
+  </script>
+
+  <div class="slide2">
+		<p class="bg"> SB 1.4.2 — Śaunaka said: O Sūta Gosvāmī, you are the most fortunate and respected of all those who can speak and recite. Please relate the pious message of Śrīmad-Bhāgavatam, which was spoken by the great and powerful sage Śukadeva Gosvāmī </p>
+	 <a href="Canto1_Narada_Instructs_Vyasadev_Ch1.html" class="button bg">Read More...</a>
+  </div>
+
+  .chapter-name a {
+	font-family: 'SAMAR';
+	color: #FFFFFF;
+}
+
+.chapter-name {
+	font-size: 1.5em;
+	margin-top:5px;
+	display: block;
+}
+
+
+h2 {
+	margin-top: 30px;
+}
+
+
+.chapter-nav {
+	margin-top: 5px;
+	display: block;
+}
+
+.chapter-nav a, .chapter-name a ,.chapter-nav-bottom a{
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+
+.chapter-nav a, .chapter-nav-bottom a{
+	font-size: 1em;
+	color: #333333;
+}
+
+.chapter-nav-bottom a{
+	margin-top: 30px;
+}
+
+.chapter-nav a{
+	color: #FFFFFF;
+}
+/* ---- Layout Containers ---- */
+
+.chapter-header{
+padding-top: .5em;
+padding-bottom: .5em;
+background-color: #333333;
+display: block;
+}
+
+.slide1 .button {
+	width:40%;
+	top:40%;
+	left:0%;
+	color: #333333;
+  border-color: #333333;
+  opacity: .6;
+	font-size: 12px;
+}
+
+.chapter-primary {
+  width: 100%;
+}
+
+.chapter-nav, .chapter-nav-bottom-right{
+  float: right;
+}
+
+.chapter-nav-bottom-left{
+  float: left;
+}
+
+.chapter-nav li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.image1 {
+float: left;
+max-height: 400px;
+max-width: 400px;
+}
+.image2 {
+float: right;
+max-height: 400px;
+max-width: 400px;
+}
+
+
+.container {
+width: 100%;
+display: block;
+border-width: 5px;
+border-color: red;
+}
+.carousel {
+	float: left;
+	margin-bottom: 30px;
+}
