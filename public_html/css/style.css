@@ -146,6 +146,7 @@ height: 500px;
 display:block;
 text-align: center;
 }
+
 .slide2 {
 background-image: url("../img/sukadev_pariksit.jpg");
 background-repeat: no-repeat;
@@ -278,20 +279,29 @@ margin-right: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 25px;
-	border: 2px solid #333333;
 	border-radius: 8px;
-	margin: 10px 20px;
-	align: center;
+	margin: 10px 10px;
 }
 
-/* .column_container {
-	width: 768px;
+.column1 {
+  background-color: #60889f;
+}
+
+.column1, .column2 p{
+	color: #ffffff;
+}
+
+.column2 {
+  background-color: #2491cd;
+}
+
+ .column_container {
+	 width: auto;
 	 margin: 0 auto;
-} */
-
-.wrapper {
-	padding: 10px 20px;
-}
+	 height: auto;
+	 border-radius: 8px;
+	 background-color: #edeff0;
+ }
 
 .medium {
 height: 250px;
@@ -353,10 +363,12 @@ padding: 0px 0px;
  } */
 
   .column1, .column2 {
-	width: 43%;
+	width: auto;
 	float: left;
 	height: auto;
 	padding-bottom: 25px;
+	-webkit-align-self: center; /* Safari 7.0+ */
+   align-self: center;
  }
 
  .wrapper {
@@ -367,7 +379,17 @@ padding: 0px 0px;
 .column_container {
 	width: 90%;
 	margin: 0 auto;
+	display: -webkit-flex; /* Safari */
+	-webkit-align-items: flex-start; /* Safari 7.0+ */
+	display: flex;
+	align-items: flex-start;
 }
+
+.column_container div {
+	 -webkit-flex: 1; /* Safari 6.1+ */
+	 flex: 1;
+}
+
  /* .column1, .column2{
  	width: 50% auto;
  	height: auto;
@@ -384,7 +406,7 @@ padding: 0px 0px;
 
  .wrap{
 
-	 min-height: calc(100hv-60px);
+	 min-height: calc(100hv-auto);
 
  }
 
@@ -438,7 +460,7 @@ padding: 0px 0px;
 		width: 100%;
 	}
 	.column1, .column2 {
-	width: 45%;
+	width: auto;
 	float: left;
 	height: auto;
 	padding-bottom: 25px;
