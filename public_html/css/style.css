@@ -285,6 +285,7 @@ margin-right: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-bottom: 25px;
+	padding-top: 10px;
 	border-radius: 8px;
 	margin: 10px 10px;
 }
@@ -378,9 +379,9 @@ padding: 0px 0px;
  } */
 
   .column {
-	width: auto;
+	width: 33%;
 	float: left;
-	height: auto;
+	height: 825px;
 	padding-bottom: 25px;
 	-webkit-align-self: center; /* Safari 7.0+ */
    align-self: center;
@@ -476,9 +477,9 @@ padding: 0px 0px;
 		width: 100%;
 	}
 	.column {
-	width: auto;
+	width: 33%;
 	float: left;
-	height: auto;
+	height: 700px;
 	padding-bottom: 25px;
  }
 
