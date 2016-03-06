@@ -137,8 +137,19 @@ margin: 10px 10px;
 	text-align: left;
 	display: block;
 }
+
 .slide1 {
-background-image: url("../img/pariksit.jpg");
+	background-image: url("../img/pariksit.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display:block;
+	text-align: center;
+}
+
+.slide2 {
+background-image: url("../img/sukadev_pariksit.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -147,8 +158,8 @@ display:block;
 text-align: center;
 }
 
-.slide2 {
-background-image: url("../img/sukadev_pariksit.jpg");
+.slide3 {
+background-image: url("../img/vishnu_ocean2.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -201,10 +212,6 @@ text-align: center;
     color: white;
     text-align: center;
     text-decoration: none;
-}
-
-li.dropdown {
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -358,6 +365,11 @@ padding: 0px 0px;
 	 margin-right: 10px;
  }
 
+ li.dropdown {
+     display: inline-block;
+ }
+
+
 /* .half-grid {
 	 float: left;
 	 height: 700px;
@@ -480,6 +492,5 @@ padding: 0px 0px;
 	 height: auto;
 	 padding-bottom: 25px;
 	} */
-
 
 }
