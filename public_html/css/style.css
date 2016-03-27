@@ -305,7 +305,17 @@ margin-right: 5px;
 #col_3 {
   background-color: #CC6699;
 }
+#col_4 {
+  background-color: #ffa64d;
+}
 
+#col_5 {
+  background-color: #00b3b3;
+}
+
+#col_6 {
+  background-color: #862d59;
+}
  .column_container {
 	 width: auto;
 	 margin: 0 auto;
